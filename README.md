@@ -16,7 +16,7 @@ Parameters:
 spin(stringToSpin: string);
 ```
 
-Interface:
+Example:
 
 ```js
 const spin = require('string-content-spinner');
@@ -38,7 +38,7 @@ Parameters:
 factory(openSectionMarker: string, closeSectionMarker: string, delimiter: string);
 ```
 
-Interface:
+Example:
 
 ```js
 // Get factory function
@@ -55,6 +55,12 @@ console.log(result);
 
 This will log either `Hello world` or `Hello mars`.
 
-### Tests
+### Development
 
+#### NPM commands
+
+- `npm lint`: lint JS files
+- `npm lint`: lint JS files
 Run `npm test` to run tests. `pre-commit` is set up with `prettier`, `jslint` and test run.
+
+
