@@ -1,2 +1,60 @@
 # string-content-spinner
-Tiny Node.js package to spin string content
+
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
+Node.js recursive content spinner algorithm.
+
+### API
+
+#### `spin` function
+
+Spin a string.
+
+Parameters:
+
+```js
+spin(stringToSpin: string);
+```
+
+Interface:
+
+```js
+const spin = require('string-content-spinner');
+
+const result = spin('{Hello|Good morning} world');
+
+console.log(result);
+```
+
+This will log either `Hello world` or `Good morning`.
+
+#### `factory` function
+
+Generates a new `spin` function with custom section markers and delimiter.
+
+Parameters:
+
+```js
+factory(openSectionMarker: string, closeSectionMarker: string, delimiter: string);
+```
+
+Interface:
+
+```js
+// Get factory function
+const spinFactory = require('string-content-spinner').factory;
+
+// Generate new spin function with custom section markers and delimiter
+const spin = spinFactory('[[', ']]', '::');
+
+// Use it!
+const result = spin('Hello [[world::mars]]');
+
+console.log(result);
+```
+
+This will log either `Hello world` or `Hello mars`.
+
+### Tests
+
+Run `npm test` to run tests. `pre-commit` is set up with `prettier`, `jslint` and test run.

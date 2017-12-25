@@ -1,0 +1,37 @@
+{
+  "name": "string-content-spinner",
+  "version": "1.0.0",
+  "description": "String content spinner",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "prettier": "prettier \"*/**/*.js\" --ignore-path ./.prettierignore --write",
+    "lint": "eslint lib/**",
+    "git-add": "npm run prettier && npm run lint && npm test && git add . && git status"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heek/string-content-spinner.git"
+  },
+  "author": "Ulflander <xlaumonier@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heek/string-content-spinner/issues"
+  },
+  "homepage": "https://github.com/heek/string-content-spinner#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.14.0",
+    "mocha": "^4.0.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.9.2"
+  },
+  "pre-commit": [
+    "prettier",
+    "test"
+  ],
+  "prettier": {
+    "singleQuote": true
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+    }
+  },
+  "rules": {
+    "semi": 2,
+    "no-debugger": 1,
+    "no-console": 1,
+    "no-implicit-globals": 1,
+    "no-undef": 1
+  },
+  "globals": {
+    "require": false,
+   "module": false,
+   "node": false,
+   "console": false,
+   "process": false,
+   "exports": false,
+   "__dirname": false,
+
+   "describe": false,
+   "before": false,
+   "after": false,
+   "beforeEach": false,
+   "afterEach": false,
+   "it": false,
+   "expect": false
+  }
+}
