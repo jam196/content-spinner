@@ -59,8 +59,9 @@ This will log either `Hello world` or `Hello mars`.
 
 #### NPM commands
 
-- `npm lint`: lint JS files
-- `npm lint`: lint JS files
-Run `npm test` to run tests. `pre-commit` is set up with `prettier`, `jslint` and test run.
+- `npm run prettier`: run prettier on source files (both lib and test files)
+- `npm run lint`: lint source files (both lib and test files, using `eslint`)
+- `npm test` or `npm run test`: run unit tests
+- `npm run git-add`: run prettor, lint and unit tests, if all passed, stage changes
 
 
