@@ -37,6 +37,14 @@ describe('String content spinner', function() {
       assert.isAbove(possibleResults.indexOf(spin(actual)), -1);
     });
 
+    it('should predictably spin content with the same provided seed', function() {
+      const actual = ' {Hi|Hello|Hey} ';
+
+      assert.equal(spin(actual, 'example'), ' Hello ');
+      assert.equal(spin(actual, 'Hello World'), ' Hi ');
+      assert.equal(spin(actual, 'r4ndom $tr!ng?'), ' Hey ');
+    });
+
     it('should spin content recursively', function() {
       const actual = '{ H{i|ey} | Hello }';
       const possibleResults = [' Hi ', ' Hello ', ' Hey '];

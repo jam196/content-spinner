@@ -1,7 +1,7 @@
 {
-  "name": "string-content-spinner",
-  "version": "1.0.0",
-  "description": "String content spinner",
+  "name": "predictable-content-spinner",
+  "version": "0.1.0",
+  "description": "String content spinner with custom input to make it predictable",
   "main": "lib/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",
