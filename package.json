@@ -1,6 +1,6 @@
 {
-  "name": "content-spinner",
-  "version": "0.1.0",
+  "name": "@bob6664569/content-spinner",
+  "version": "0.1.1",
   "description": "String content spinner with custom input to make it predictable",
   "main": "lib/index.js",
   "scripts": {
