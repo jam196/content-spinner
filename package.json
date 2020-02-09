@@ -1,5 +1,5 @@
 {
-  "name": "predictable-content-spinner",
+  "name": "content-spinner",
   "version": "0.1.0",
   "description": "String content spinner with custom input to make it predictable",
   "main": "lib/index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/heek/string-content-spinner.git"
+    "url": "git+https://github.com/bob6664569/content-spinner.git"
   },
   "author": "Ulflander <xlaumonier@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/heek/string-content-spinner/issues"
+    "url": "https://github.com/bob6664569/content-spinner/issues"
   },
-  "homepage": "https://github.com/heek/string-content-spinner#readme",
+  "homepage": "https://github.com/bob6664569/content-spinner#readme",
   "dependencies": {},
   "devDependencies": {
     "chai": "^4.1.2",
