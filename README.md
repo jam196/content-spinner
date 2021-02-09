@@ -2,13 +2,13 @@
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-Node.js recursive content spinner algorithm with repetable behavior. 
+Node.js recursive content spinner algorithm with repeatable behavior. 
 
 Based on [string-content-spinner](https://github.com/heek/string-content-spinner) ([@heek](https://github.com/heek/))
 
 ## API
 
-### `spin` function
+### The `spin` function
 
 Spin a string.
 
@@ -18,7 +18,7 @@ Parameters:
 spin(stringToSpin: string[, seed: string]);
 ```
 
-###Example without seed parameter:
+### Example without seed parameter:
 
 ```js
 const spin = require('content-spinner');
@@ -29,7 +29,7 @@ console.log(result);
 ```
 This will log either `Hello world` or `Good morning`.
 
-###Example with a seed parameter:
+### Example with a seed parameter:
 
 ```js
 const spin = require('predictable-content-spinner');
@@ -40,7 +40,7 @@ console.log(result);
 ```
 This example will always product the same output with the same string passed
 
-### `factory` function
+### The `factory` function
 
 Generates a new `spin` function with custom section markers and delimiter.
 
