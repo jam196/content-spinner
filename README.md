@@ -6,9 +6,9 @@ Node.js recursive content spinner algorithm with repetable behavior.
 
 Based on [string-content-spinner](https://github.com/heek/string-content-spinner) ([@heek](https://github.com/heek/))
 
-### API
+## API
 
-#### `spin` function
+### `spin` function
 
 Spin a string.
 
@@ -18,10 +18,10 @@ Parameters:
 spin(stringToSpin: string[, seed: string]);
 ```
 
-####Example without seed parameter:
+###Example without seed parameter:
 
 ```js
-const spin = require(-content-spinner');
+const spin = require('content-spinner');
 
 const result = spin('{Hello|Good morning} world');
 
@@ -29,7 +29,7 @@ console.log(result);
 ```
 This will log either `Hello world` or `Good morning`.
 
-####Example with a seed parameter:
+###Example with a seed parameter:
 
 ```js
 const spin = require('predictable-content-spinner');
@@ -40,7 +40,7 @@ console.log(result);
 ```
 This example will always product the same output with the same string passed
 
-#### `factory` function
+### `factory` function
 
 Generates a new `spin` function with custom section markers and delimiter.
 
@@ -67,9 +67,9 @@ console.log(result);
 
 This will log either `Hello world` or `Hello mars`.
 
-### Development
+## Development
 
-#### NPM commands
+### NPM commands
 
 - `npm run prettier`: run prettier on source files (both lib and test files)
 - `npm run lint`: lint source files (both lib and test files, using `eslint`)
